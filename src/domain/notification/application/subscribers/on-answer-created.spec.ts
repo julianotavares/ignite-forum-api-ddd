@@ -45,6 +45,7 @@ describe('On Answer Created', () => {
 
     sendNotificationExecuteSpy = vi.spyOn(sendNotificationUseCase, 'execute')
 
+    // eslint-disable-next-line no-new
     new OnAnswerCreated(inMemoryQuestionsRepository, sendNotificationUseCase)
   })
 

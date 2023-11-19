@@ -45,6 +45,7 @@ describe('On Question Best Answer Chosen', () => {
 
     sendNotificationExecuteSpy = vi.spyOn(sendNotificationUseCase, 'execute')
 
+    // eslint-disable-next-line no-new
     new OnQuestionBestAnswerChosen(
       inMemoryAnswersRepository,
       sendNotificationUseCase,
