@@ -1,7 +1,7 @@
-export class  Slug {
+export class Slug {
   public value: string
 
-  constructor (value: string) {
+  constructor(value: string) {
     this.value = value
   }
 
@@ -9,13 +9,13 @@ export class  Slug {
    * Receives a string and returns a slug
    *
    * example: "This is a slug" -> "this-is-a-slug"
-   * 
+   *
    * @param text {string}
-   * @returns 
+   * @returns
    */
-  static createFromText (text: string) {
+  static createFromText(text: string) {
     const slugText = text
-      .normalize("NFKD")
+      .normalize('NFKD')
       .toLowerCase()
       .trim()
       .replace(/\s+/g, '-')
